@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Baloo 2', cursive;	
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.7;
+	background-color: #222;
+	color: #fefefe;
+	/* overflow: hidden; */
+}
+.land-page{
+	height: 100vh;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top: 10px;
+    left: 10px;
+}
+.body-text{
+	position: absolute;
+	text-align: right;
+	top: 15%;
+    right: 5%;
+	/* position: relative; */
+	/* top: 100%;
+    left: 20%; */
+	/* transform: translate(-50%,-50%); */
+	font-weight: 700;
+}
+.glitch{
+	font-size: 45px;
+}
+.skill{
+	font-size: 20px;
+}
+.category{
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card:link, .card:visited{
+	margin: 5px;
+	min-height: 250px;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(111, 118, 124, 0.164), 
+		rgba(41, 53, 61, 0.096));	
+	width: 30%;
+	padding: 5% 10%;
+	text-align: center;
+	transition: all .2s ease-in;
+	cursor: pointer;
+	color: #fefefe;
+	text-decoration: none;
+}
+.card:hover{
+	transform: scale(1.05);
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(75, 81, 87, 0.527), 
+		rgba(71, 75, 76, 0.514));
+}
+.card img{
+	width: 100%;
+}
+.social_icons{
+	position: absolute;
+	bottom: 0%;
+	left: 10px;
+	padding: 10px;
+	transition: all .2s ease-out;
+}
+.gth, .ig{
+	margin-right: 10px;
+}
+.gth img:hover,.ig img:hover,.twt img:hover{
+	transform: scale(1.2);
+}

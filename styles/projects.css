@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Baloo 2', cursive;
+    font-size: 16px;
+	line-height: 2;
+	background-color: #222;
+	color: #fefefe;
+	/* overflow: hidden; */
+}
+.logo{
+	/* position: absolute;
+	top: 10px;
+    left: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+.b-icon{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.menu{
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.about-page{
+    /* position: absolute; */
+    /* top: 400px; */
+    /* left: 20px; */
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+.writeup{
+    display: block;
+}
+.emotion img{
+    width: 20%;
+    background-position: center;
+}
+.reach:link, .reach:visited{
+	color: #fefefe;
+}
+.card{
+    background-image: linear-gradient(
+		to right bottom,
+		rgba(75, 81, 87, 0.527), 
+        rgba(71, 75, 76, 0.514));
+        width: 300px;
+	padding: 5% 10%;
+	text-align: center;
+	transition: all .2s ease-in;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.category{
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 2%; */
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#menu{
+    font-size: 14px;
+}
+.card:link, .card:visited{
+	margin: 5px;
+	min-height: 250px;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(111, 118, 124, 0.164), 
+		rgba(41, 53, 61, 0.096));	
+	width: 30%;
+	padding: 5% 10%;
+	text-align: center;
+	transition: all .2s ease-in;
+	cursor: pointer;
+	color: #fefefe;
+	text-decoration: none;
+}
+.card:hover{
+	transform: scale(1.05);
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(75, 81, 87, 0.527), 
+		rgba(71, 75, 76, 0.514));
+}
+.card img{
+	width: 100%;
+}
